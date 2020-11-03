@@ -1,0 +1,86 @@
+<div class="jumbotron text-center bg-dark" style="font-family: 'Times New Roman'">
+        <h1 class="text-white"> MY CALCULATOR </h1>
+
+        <div class="container bg-warning">
+            <form method="POST">
+
+                <div class="row">
+                    <div class="col-lg-9 col-md-12">
+                        <!--Tham so 1-->
+                        <div class="row my-2">
+                            <div class="col-lg-4">
+                                <label id="para1-lb" for="parameter1">Số thứ nhất</label>
+                            </div>
+    
+                            <div class="col">
+                                <input type="text" name="pa1" id="parameter1"  value="{{pa1_value}}"> 
+                            </div>
+                        </div>
+
+                        <!--Tham so 2-->
+                        <div class="row my-2">
+                            <div class="col-lg-4">
+                                <label for="parameter2">Số thứ hai</label>
+                            </div>
+    
+                            <div class="col">
+                                <input type="text" name="pa2" id="parameter2" value="{{pa2_value}}"> 
+                            </div>
+                        </div>
+                        <!--Ket qua-->
+                        <div class="row my-2">
+                            <div class="col-lg-4">
+                                <label for="result">Kết quả</label>
+                            </div>
+    
+                            <div class="col">
+                                <input type="text" name="result" readonly value="{{result_value}}"> 
+                            </div>
+                        </div>
+
+                        <!--Thong bao-->
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label for="notify">Thông báo</label>
+                            </div>
+    
+                            <div class="col">
+                                <label style="color: red">{{notify_value}}</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Phep tinh-->
+                    <div class="col-lg-3">
+                        <div class="row my-2">
+                            <div class="col">
+                                <input type="radio" id="sum-rad" name="operation" value="Cong">
+                                <label for="sum-rad">Cộng</label>
+                            </div>
+
+                            <div class="col">
+                                <input type="radio" id="subtract-rad" name="operation" value="Tru">
+                                <label for="subtract-rad">Trừ</label>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col">
+                                <input type="radio" id="multiply-rad" name="operation" value="Nhan">
+                                <label for="multiply-rad">Nhân</label>
+                            </div>
+
+                            <div class="col">
+                                <input type="radio" id="devide-rad" name="operation" value="Chia">
+                                <label for="devide-rad">Chia</label>
+                            </div>
+                        </div>
+                        <!--Button-->
+                        <div class="row text-center my-2">
+                            <button type="submit" id="btn-calc" class="btn btn-primary mx-4">Tính</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
